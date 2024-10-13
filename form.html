@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>My First Form</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+            <fieldset>
+                <legend>My Info</legend>
+                <div><label>first name: <input type="text" name="first_name_field"></label></div>
+                <div><label>last name: <input type="text" name="last_name_field"></label></div>
+                <div><label>phone: <input type="tel" name="phone_field"></label></div>
+                <div><label>email: <input type="email" name="email_field"></label></div>
+                <div>Gender:</div>
+                <div><label>Male: <input type="radio" name="gender_field" value="male"> Female: <input type="radio" name="gender_field" value="female"></label></div>
+                <div>Age:</div>
+                <div>
+                    <select name="age_field">
+                        <option value="under_18">Under 18</option>
+                        <option value="above_18">Above 18</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>My Availablility</legend>
+                <div><h2>Days Available:</h2></div>
+                <div>Sunday <input name="available_field[]" type="checkbox" value="sunday"></div>
+                <div>Monday <input name="available_field[]" type="checkbox" value="monday"></div>
+                <div>Tuesday <input name="available_field[]" type="checkbox" value="tuesday"></div>
+                <div>Wednesday <input name="available_field[]" type="checkbox" value="wednesday"></div>
+                <div>Thursday <input name="available_field[]" type="checkbox" value="thursday"></div>
+                <div>Friday <input name="available_field[]" type="checkbox" value="friday"></div>
+                <div>Saturday <input name="available_field[]" type="checkbox" value="saturday"></div>
+                <div><h2>Comments</h2></div>
+                <div><textarea name="comments_field"></textarea></div>
+            </fieldset>
+            <input type="submit" value="Lets Go">
+        </form>
+    </body>
+</html>
