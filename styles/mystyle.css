@@ -5,3 +5,13 @@ h1 {
     font-style: italic;
     font-weight: 900;
 }
+
+table {
+    background-color: red;
+    font-size: 100%;
+}
+
+th {
+    font-style: italic;
+    font-weight: 500;
+}
